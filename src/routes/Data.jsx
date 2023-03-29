@@ -1,49 +1,64 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Component/Navbar';
 import"../Css/Datacss.css";
-import Loginimg from '../Images/Loginimg.png';
+import dataimg from '../Images/dataimg.png';
+import CropData from '../Component/CropData.jsx';
 
-function  FetchData() {
+
+const API ="http://localhost:8000/crops-data/";
+const Appdata = () =>{
     const [info, setData] = useState([])
 
+const fetchData = async (url) =>{
+  try{
+    const res = await fetch(url);
+    const data = await res.json();
+    if(data.length>0){
+      setData(data);
+    }
+    console.log(data);
+  }catch (e){
+     console.error(e)
+  }
+}
+
+
+
   useEffect(() => {
-    fetch("http://localhost:8000/crops-data/")
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(err => console.log(err))
+    fetchData(API);
+
   }, [])
     return(
         <>
+        <div id="datapage">
         <Navbar/>
-
+        <table id='datatable'>
         
-
-        <tbody>
-        <tr>
-          <th>Name</th>
-          <th>Brand</th>
-          <th>Image</th>
-          <th>Price</th>
-          <th>Rating</th>
-        </tr>
-
-          {info.map((item, index)=>(
-             <tr key={index}>
-             <td>{item.region}</td>
-             <td>{item.climate}</td>
-             <td>{item.price}</td>
-             <td>{item.rating}</td>
-           </tr>
-          ))}
-
-
-        </tbody>
+          <thead>
+            <tr>
+            <th>Crop Name</th>
+            <th>Region</th>
+            <th>Temperature</th>
+            <th>Climate</th>
+            <th>Soil Quantity</th>
+            <th>Rain Amount</th>
+            <th>Diseases</th>
+            <th>Nutrients</th>
+            <th>Fertilizers</th>
+            <th>Pesticides</th>
+            </tr> 
+          </thead>
+          <tbody>
+            <CropData info={info} />
+          </tbody>
+        </table>
+        </div>
         
         <div className="backgrd">
-        <img alt="loginimg" src={Loginimg}/>
+        <img alt="dataimg" src={dataimg}/>
         </div>
 
         </>
     )
 }
-export default FetchData;
+export default Appdata;

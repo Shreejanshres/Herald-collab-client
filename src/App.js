@@ -7,6 +7,7 @@ import Contact from './routes/Contact';
 import Login from './routes/Login';
 import Register from './routes/Register';
 import Forgotpw from './routes/Forgotpw';
+import Dashboard from './routes/Dashboard';
 
 
 
@@ -22,6 +23,7 @@ const App=()=>{
         <Route path ="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/forgotpw" element={<Forgotpw/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
       </Routes>
        
     </div>
