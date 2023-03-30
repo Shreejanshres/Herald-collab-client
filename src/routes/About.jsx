@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from '../Component/Navbar';
 
-const  Services=()=>{
+const  About=()=>{
     return(
         <>
         <Navbar/>
-        <h1>Services Page</h1>
+        <h1>About us Page</h1>
         </>
     )
 }
-export default Services;
+export default About;

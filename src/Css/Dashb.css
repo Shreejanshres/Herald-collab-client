@@ -1,12 +1,28 @@
-.dashback{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-}
 
+.userdata{
+    
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    margin-top: 130px;
+    padding:10px 30px;
+    position: absolute;
+    margin-left: 150px;
+    box-sizing: border-box;
+
+width: 550px;
+height: 300px;
+left: 50px;
+top: 50px;
+
+background: #FFFFFF;
+border: 1px solid #05B00C;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+}
 img{
     width: 100%;
-    height:1010px;
+    height:100%;
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -15,4 +31,62 @@ img{
 }
 .logo{
     margin-left: 10px;
+}
+
+.photo{
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    padding:70px;
+    position: absolute;
+    top:50px;
+    margin-left: 850px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+border: 1px solid #05B00C;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+}
+
+.citfront{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    padding:70px 5px;
+    position: absolute;
+    top:50px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+border: 1px solid #05B00C;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+}
+
+.citback{
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    padding:70px 5px;
+    position: absolute;
+    top:50px;
+    margin-left: 510px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+border: 1px solid #05B00C;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+}
+#citb{
+    display: flex;
+}
+.profileimg{
+    margin-top: 20px;
+    height:85px;
+    width:85px;
+    align-items: right;
+    justify-content: right;
+    margin-left: 92%;
+    position: fixed;
 }
