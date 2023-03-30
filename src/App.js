@@ -8,6 +8,7 @@ import Login from './routes/Login';
 import Register from './routes/Register';
 import Forgotpw from './routes/Forgotpw';
 import Dashboard from './routes/Dashboard';
+import Kyc from './routes/kyc';
 
 
 
@@ -24,6 +25,7 @@ const App=()=>{
         <Route path="/register" element={<Register/>}/>
         <Route path="/forgotpw" element={<Forgotpw/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/kyc" element={<Kyc/>}/>
       </Routes>
        
     </div>

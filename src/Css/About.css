@@ -1,0 +1,41 @@
+.wrapper{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+#headr{
+    text-align: center;
+    margin-top: 70px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+
+#regii{
+    border: 20px;
+    margin-left: 50px;
+    width: 45%;
+    height: 50%;
+    margin-top: 130px;
+    box-shadow: 0 0 20px rgb(112, 111, 111);
+    border-radius: 20px;
+    position: absolute;
+    padding: 30px 30px;
+}
+#card {
+    background-color: transparent;
+    padding: 30px 30px;
+    border: 2px ;
+    float: right;
+    width: 45%;
+    height: 50%;
+    margin-top: 130px;
+    
+   margin-left: 30px;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0 0 20px rgb(112, 111, 111);
+  
+  }
+ 
+  

@@ -30,7 +30,7 @@ const fetchData = async (url) =>{
   }, [])
     return(
         <>
-        <div id="datapage">
+        <div className="datapage">
         <Navbar/>
         <table id='datatable'>
         
@@ -54,9 +54,11 @@ const fetchData = async (url) =>{
         </table>
         </div>
         
+        
         <div className="backgrd">
         <img alt="dataimg" src={dataimg}/>
         </div>
+        
 
         </>
     )

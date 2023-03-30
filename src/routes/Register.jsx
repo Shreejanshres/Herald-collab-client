@@ -35,7 +35,7 @@ export const Register  = () =>{
             <a>Sign Up</a>
         </div>
             <div className="mid">
-                <form id="reg" onSubmit ={handleSubmit}>
+                <form id="regg" onSubmit ={handleSubmit}>
                     <label id="emaill" htmlFor="email">Email</label>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email"/>
                     <label id="pass" htmlFor="password">Password</label>

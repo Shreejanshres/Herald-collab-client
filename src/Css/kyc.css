@@ -1,0 +1,102 @@
+.registerrr{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.logo{
+    
+}
+
+#butto{
+    margin-top: 20px;
+    margin-left: 450px;
+    width: 200px;
+}
+#reggg{
+    margin-top: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: fixed;
+    margin-left: -5%;
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    
+    
+
+}
+#imgg{
+    background-image: cover;
+}
+
+#head{
+    font-size: 40px;
+    margin-left: -520px;
+    font-style: normal;
+    margin-bottom: -110px;
+   
+}
+
+#Nav{
+    position: fixed;
+}
+
+
+#la{
+    margin-left: -635px;
+}
+#la1{
+    margin-left: -605px;
+}
+#la2{
+    margin-left: -610px;
+}
+#la3{
+    margin-left: -565px;
+}
+#la4{
+    margin-left: -675px;
+}
+#la5{
+    margin-left: -625px;
+}
+#yourpicture{
+    margin-top: -250%;
+    margin-right: -250%;
+}
+#choosefile1{
+    margin-top: -250%;
+    margin-left: -5;
+    
+}
+.yourpicture{
+    margin-top: -110%;
+    margin-left: 50%;
+}
+
+.landOwnership{
+    margin-top: -75%;
+    margin-left: 50%;
+}
+.citizenship{
+    margin-top: -25%;
+    margin-left: 50%;
+}
+#name{
+    margin-right: 10%;
+}
+#user {
+    width:390px;
+  }
+
+.top{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+
+
+
+
