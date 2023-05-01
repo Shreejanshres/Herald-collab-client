@@ -20,7 +20,7 @@ export const Register  = () =>{
     return (
         <>
         <div className='register'>
-            <div className='headdd'>
+            <div className='hod'>
             <Link to="/">
             <img src={logo} alt="logo" className="logo"/>
             </Link>   
