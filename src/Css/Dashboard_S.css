@@ -1,0 +1,374 @@
+.Background_d {
+  position: fixed;
+  
+  width: 106%;
+  height: 81%;
+  left: -2%;
+  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  
+    
+    
+    
+  }
+  #top_d{
+    margin-top: -20px;
+  }
+
+#headlogo{
+    position: relative;
+    margin-left: -1440px;
+}
+#dashb{
+    margin-left: -55%;
+    margin-top: -65px;
+    font-size: 250%;
+}
+.user_icon{
+  font-size: 50px;
+  margin-top: -88px;
+  margin-right: -1200px;
+}
+.exit_icon{
+  font-size: 40px;
+  margin-top: -68px;
+  margin-right: -1350px;
+}
+
+
+
+.todaysweather{
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  left: 80px;
+  top: 80px;
+  
+  background: #FFFFFF;
+  border: 1px solid #05B00C;
+  box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: inline-block;
+  
+  }
+
+  .topi{
+    box-sizing: border-box;
+    width: 220px;
+    height: 45px;
+    left: 78px;
+    top: 119px;
+    background: #05B00C;
+    border: 1px solid #0FB30D;
+    border-radius: 20px 0px;
+   
+}
+#heading1{
+  font-size: 23px;
+  font-weight:bold;
+  margin-top: 8px;
+}
+.temperature{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+
+}
+#tempi{
+width: 225px;
+height: 73px;
+left: 80px;
+top: 165px;
+
+font-family: 'Itim';
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+line-height: 100px;
+
+align-items: left;
+
+color: #000000;
+}
+.weathericon_S{
+  height: 100px;
+  width: 100px;
+  
+
+}
+.otherdata_S{
+  display: flex;
+  justify-content:space-evenly;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.newdate{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.calender_r{
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  left: 1100px;
+  top: 80px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 1px solid #0FB30D;
+  display: flex;
+  }
+
+  .sellinformation{
+    
+    position: absolute;
+    width: 425px;
+    left: 1080px;
+    top: 380px;
+    height: 330px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #0FB30D;
+    }
+    #seller{
+      box-sizing: border-box;
+  
+      position: absolute;
+      width: 230px;
+      height: 45px;
+      left: 0px;
+      top: 0px;
+      
+      background: #0FB30D;
+      border: 1px solid #0FB30D;
+      border-radius: 20px 0px;
+      font-size: 23px;
+  font-weight:bold;
+  padding-top:8px;
+  }
+  .crop_list{
+    margin-top: 32px;
+    
+    
+}
+.crop_list #crop_li {
+  list-style:none;
+  padding: 40px;
+  margin-top: -30px;
+  margin-left: -130px;
+  font-size: 20px;
+}
+#crop_li li::before {
+  content: "\2022";
+  color:  #0FB30D;
+  font-weight:bold;
+  font-size:32px;
+ display:inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.info_list #sell_li {
+  list-style:none;
+  padding: 40px;
+  margin-top: -30px;
+  margin-left: -80px;
+  font-size: 20px;
+  word-spacing: 5px;
+}
+#sell_li li::before {
+  content: "\2022";
+  color:  #0FB30D;
+  font-weight:bold;
+  font-size:32px;
+ display:inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.calll{
+  width:700px;
+  margin-left: 25px;
+  margin-top: 0px;
+  
+}
+.daily_wheat{
+  display: grid;
+  margin-left: 10px;
+  margin-top: -24px;
+  
+}
+.daily_wheat1{
+  display:flex;
+  justify-content: space-evenly;
+}
+.daily_wheat1a{
+  margin-top: 10px;
+}
+.daily_wheat2{
+  display:flex;
+  justify-content: space-evenly;
+}
+.daily_wheat2a{
+  margin-top: 20px;
+}
+.daily_wheat3{
+  display:flex;
+  justify-content: space-evenly;
+}
+.daily_wheat3a{
+  margin-top: 20px;
+}
+.weather_icon1{
+  height:90px;
+  width: 140px;
+  margin-top: -5px;
+ }
+ .weather_icon2{
+   height:90px;
+   width: 140px;
+   margin-top: px;
+  
+  }
+  .weather_icon3{
+   height:90px;
+   width: 140px;
+   margin-top: 3px;
+  }
+  #tommoo_1{
+    font-size: 20px;
+    margin-top: -10px;
+   }
+   #tommoo_2{
+    font-size: 20px;
+    margin-top: -10px;
+   }
+   #tommoo_3{
+    font-size: 20px;
+    margin-top: -10px;
+   }
+   .back_cit{
+    position: absolute;
+    width: 300px;
+    height: 330px;
+    left: 640px;
+    top: 380px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #0FB30D;
+}
+#b_cit{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 170px;
+  height: 45px;
+  left: 65px;
+  
+  background: #0FB30D;
+  border: 1px solid #0FB30D;
+  border-radius: 0px 0px 20px 20px;
+  font-size: 23px;
+  font-weight:bold;
+  padding-top: 6px;
+}
+.front_cit{
+  height:330px;
+  width: 400px;
+  display: grid;
+  margin-top: 410px;
+  padding:70px 5px;
+  position: absolute;
+  top:-30px;
+  left: 78px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+border: 1px solid #05B00C;
+box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.f_cit{
+  box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  right: 38.94%;
+  top: 0%;
+  bottom: 83.45%;
+  
+  background: #0FB30D;
+  border: 1px solid #0FB30D;
+  border-radius: 20px 0px;
+  font-size: 23px;
+  font-weight:bold;
+  padding-top: 8px;
+  
+  
+  
+  }
+.addevent{
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  left: 600px;
+  top: 80px;
+  background: #FFFFFF;
+  border: 1px solid #00ff33;
+  box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: inline-block;
+
+  
+}
+#heading_A{
+  font-size: 23px;
+  font-weight:bold;
+  margin-top: 8px;
+
+}
+.topii{
+  box-sizing: content-box;
+    width: 220px;
+    height: 45px;
+    left: 78px;
+    top: 119px;
+    background: #05B00C;
+    border: 1px solid #05B00C;
+    border-radius: 20px 0px;
+
+}
+
+#button_D{
+  margin-right: -350px;
+  margin-top: -100px;
+}
+#button_T{
+  margin-right: -350px;
+  margin-top: -50px;
+}
+#button_S{
+  
+  margin-top: -50px;
+  margin-right: 20px;
+}
+
+input[type="text"] {
+  border: 2px solid rgb(1, 1, 1);
+  border-radius:0;
+  padding: 10px ;
+  height: 100px;
+  width: 250px;
+  align-items: flex-start;
+}
+#typing{
+  margin-left: -100px;
+  margin-top: 30px;
+}
+
