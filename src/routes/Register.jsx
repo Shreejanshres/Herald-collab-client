@@ -1,66 +1,148 @@
-import React,{useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Css/Registercss.css";
 import Registerimg from "../Images/Register.png";
-import logo from '../Images/logo.png';
+import logo from "../Images/logo.png";
 
-export const Register  = () =>{
-    const [name,setName] =useState('');
-    const [email,setEmail] =useState('');
-    const [pass,setPass] =useState('');
-    const [address,setAddress] =useState('');
-    const [phone,setPhone] =useState('');
-    const [user,setUser]=useState('');
+export const Register = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [address, setAddress] = useState("");
+  const [phone, setPhone] = useState("");
+  const [user, setUser] = useState("");
 
-    const handleSubmit=(e) => {
-        e.preventDefault();
-        console.log(email);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+    } else {
+      try {
+        const response = await fetch("http://localhost:8000/signup/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            password,
+            confirmPassword,
+            address,
+            phone,
+            user,
+          }),
+        });
+        if (response.ok) {
+          const data = await response.json();
+          if (data.type === "farmer") {
+            window.location.href = "/kyc";
+          } else if (data.type === "seller") {
+            window.location.href = "/seller";
+          }
+        } else {
+          alert("Invalid Credentials");
+        }
+      } catch (error) {
+        console.log(error);
+      }
     }
+  };
 
-    return (
-        <>
-        <div className='register'>
-            <div className='headdd'>
-            <Link to="/">
-            <img src={logo} alt="logo" className="logo"/>
-            </Link>   
-            <div className='topr'>
+  return (
+    <>
+      <div
+        className="register_r"
+        style={{ backgroundImage: `url(${Registerimg})` }}
+      >
+        <div id="Nav_reg">
+          <Link to="/">
+            <img src={logo} alt="logo" className="logore" />
+          </Link>
+          <div className="top_re">
             <a>Already have an account? </a>
-                <Link to="/login">
-                    <button id="butto1">LOGIN</button>
-                </Link>
-            </div>
+            <Link to="/login">
+              <button id="button_r1">LOGIN</button>
+            </Link>
+          </div>
         </div>
-        <div className="sign">
-            <a>Sign Up</a>
-        </div>
-            <div className="mid">
-                <form id="reg" onSubmit ={handleSubmit}>
-                    <label id="name" htmlFor="name">Full Name</label>
-                    <input value={name} onChange={(e) => setName(e.target.value)} name="name" type="text" placeholder="Full Name" id="name"/>
-                    <label id="emaill" htmlFor="email">Email</label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email"/>
-                    <label id="pass" htmlFor="password">Password</label>
-                    <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="**********" id="password" name="password"/> 
-                    <label id="address" htmlFor="address">Address</label>
-                    <input value={address} onChange={(e) => setAddress(e.target.value)} type="text" name="address" placeholder="address"/>
-                    <label id="phone" htmlFor="phone">Phone Number</label>
-                    <input value={phone} onChange={(e) => setPhone(e.target.value)} type="tel" name="phone" placeholder="phone"/>
-                    <label id="user" htmlFor="user">User Type:</label> 
-                    <select name={user} onChange={(e) => setUser(e.target.value)}  id="user" placeholder='user'>
-                        <option value="farmer">Farmer</option>
-                        <option value="seller">Seller</option>
-                    </select>
-                    <button id="butto2" type='submit'>Register</button>
-                    
-                
-                </form>
-            </div>
-        </div>
-        <div className='backg'>
-                <img alt="registerimg" src={Registerimg}/>
-        </div>    
-        </>
-    )
-}
+
+        <form id="reg_r" onSubmit={handleSubmit}>
+          <a id="head_r">Sign Up</a>
+          <label id="la" htmlFor="email">
+            Email:
+          </label>
+          <input
+            value={email}
+            type="email"
+            placeholder="youremail@gmail.com"
+            id="email"
+            name="email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label id="la1" htmlFor="password">
+            Password:
+          </label>
+          <input
+            value={password}
+            type="password"
+            placeholder="**********"
+            id="password"
+            name="password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <label id="la2" htmlFor="confirmPassword">
+            Confirm Password:
+          </label>
+          <input
+            value={confirmPassword}
+            type="password"
+            placeholder="**********"
+            id="confirmPassword"
+            name="confirmPassword"
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+          <label id="la3" htmlFor="address">
+            Address:
+          </label>
+          <input
+            value={address}
+            type="address"
+            name="address"
+            placeholder="address"
+            onChange={(e) => setAddress(e.target.value)}
+          />
+          <div id="reg_r2">
+            <label id="la4" htmlFor="phone">
+              Phone Number:
+            </label>
+            <input
+              value={phone}
+              type="tel"
+              name="phone"
+              placeholder="phone"
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            <label id="la5" htmlFor="user">
+              User Type:
+            </label>
+            <select
+              value={user}
+              name="user"
+              id="user"
+              onChange={(e) => setUser(e.target.value)}
+            >
+              <option value="farmer">Farmer</option>
+              <option value="seller">Seller</option>
+            </select>
+            <button id="button_r2" type="submit">
+              {" "}
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </>
+  );
+};
+
 export default Register;

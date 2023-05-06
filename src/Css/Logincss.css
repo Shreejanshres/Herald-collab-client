@@ -1,8 +1,9 @@
-
 .loginpage{
+    background: url(../Images/Loginimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
     width: 100%;
-    height: 100%;
-    position: fixed;
 }
 .headd{
     display : flex;
@@ -11,7 +12,6 @@
     padding:0 15px;
     width: 100%;
     height:80px;
-    position: fixed;
     z-index: 9999;
 }
 .top{
