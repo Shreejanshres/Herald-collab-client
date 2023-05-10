@@ -13,11 +13,11 @@ class Navbar extends Component{
     render(){
         return(
             <nav className="NavbarItems"> 
-                <img src={logo} alt="logo" className="logo"/>
+                <img src={logo} alt="logo" className="logooa"/>
                 <div className='menu-icons' onClick={this.handleClick}> {/* a div when clicked run the handleClick function */}
                     <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
-                
+                <div className='nav_menu'>
                 <ul className={this.state.clicked ? "nav-menu active":"nav-menu"}> {/* when clicked navigates to the page acoordingly */} 
                     {MenuItems.map((item, index)=>{
                         return(
@@ -30,6 +30,7 @@ class Navbar extends Component{
                          <button>LOGIN</button> {/* Linking login page when button is clicked */}
                     </Link>
                 </ul>
+                </div>
             </nav>
       
     );

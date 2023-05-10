@@ -1,35 +1,46 @@
-.wrapper{
+.wrapperz{
     height: 100%;
     width: 100%;
     position: fixed;
 }
-#headr{
+#headrpur{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 6rem;
     align-items: center;
     position: relative;
     justify-content: center;
+    margin-left: 0rem;
   }
 
-#regii{
+#regiipur{
     border: 20px;
     margin-left: 50px;
     width: 45%;
     height: 50%;
-    margin-top: 130px;
+    margin-top: 5rem;
     box-shadow: 0 0 20px rgb(112, 111, 111);
     border-radius: 20px;
     position: absolute;
     padding: 30px 30px;
+   
 }
-#card {
-    background-color: transparent;
+#puu{
+  margin-left: 0rem;
+  margin-top: -1rem;
+
+}
+#par1{
+  width: 100%;
+
+}
+#cardpu {
+    background-color:transparent;
     padding: 30px 30px;
     border: 2px ;
     float: right;
     width: 45%;
     height: 50%;
-    margin-top: 130px;
+    margin-top: 5rem;
     
    margin-left: 30px;
     border-radius: 20px;
@@ -37,7 +48,16 @@
     box-shadow: 0 0 20px rgb(112, 111, 111);
   
   }
+#puuu1{
+  margin-left: 0rem;
+  margin-top: -1rem;
+}
+#par2{
+  width: 90%;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
 
+}
   .backimggg{
     width: 100%;
     height:880px;
@@ -48,5 +68,16 @@
     background-repeat: no-repeat;
 
   }
- 
-  
+ #logingimgg{
+  width: 100%;
+  height:880px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ }
+#logingimgg{
+  width: 100%;
+  height: 100%;
+}

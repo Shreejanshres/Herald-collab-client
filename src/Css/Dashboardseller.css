@@ -1,0 +1,347 @@
+.fullpagefarm {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+  .backlogfarm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .headd {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+  
+    background: linear-gradient(
+      90deg,
+      rgba(15, 179, 13, 0.7) 0%,
+      rgba(15, 179, 13, 0) 100%
+    );
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    height: 80px;
+  }
+  .leftdash {
+    display: flex;
+  }
+  #topicfarm {
+    margin-top: 0.5rem;
+    font-size: 52px;
+    font-weight: bold;
+    margin-left: 70px;
+    letter-spacing: 20px;
+  }
+  .profileimgfarm {
+    justify-content: right;
+    padding: 20px;
+    margin-top: -5.3rem;
+    margin-left: 80%;
+  }
+  #profileimg {
+    margin-top: 0px;
+    height: 55px;
+    width: 55px;
+    align-items: right;
+    justify-content: right;
+    margin-right: 20px;
+  }
+  #logoutimg {
+    margin-top: 0px;
+    height: 50px;
+    width: 50px;
+    align-items: right;
+    justify-content: right;
+    margin-right: -5rem;
+    margin-left: 1rem;
+  }
+  .userdata {
+    width: 28rem;
+    height: 280px;
+    background: #ffffff;
+    border: 1px solid #1b371c;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .logodash {
+    margin-left: 1rem;
+    margin-top: -0.8rem;
+    width: 80px;
+    height: 70px;
+  }
+  
+  .photofarm {
+    position: absolute;
+    width: 30rem;
+    height: 41.5rem;
+    top:7rem;
+    left: 33.5rem;
+    background: #ffffff;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #05b00c;
+  }
+  .addevent{
+    margin-top: 4rem;
+  }
+  .addevent label{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  #addeventbtn{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3rem;
+    background: #05b00c;
+    border: 1px solid #05b00c;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  .citfrontfarm {
+    height: 330px;
+    width: 28rem;
+    display: grid;
+    margin-top: 410px;
+    padding: 70px 5px;
+    position: absolute;
+    top: 20px;
+    left: 3rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #05b00c;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  .citffarm {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0%;
+    right: 38.94%;
+    top: 0%;
+    bottom: 83.45%;
+  
+    background: #0fb30d;
+    border: 1px solid #0fb30d;
+    border-radius: 20px 0px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 8px;
+    width: 15rem;
+  }
+  .citback {    
+    position: absolute;
+    box-sizing: border-box;
+    width: 28rem;
+    height: 330px;
+    left: 3rem;
+    top:27rem;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #0fb30d;
+  }
+  #citb {
+    box-sizing: border-box;
+    position: absolute;
+    width: 9rem;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    background: #0fb30d;
+    border: 1px solid #0fb30d;
+    border-radius: 20px 0px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 8px;
+  }
+  #cropstop{
+    display: flex;
+    justify-content: flex-start;
+  }
+  #addcrop {
+    position: absolute;
+    width: 6rem;
+    right: 0.2rem;
+    top: 0.8rem;
+    background: #0fb30d;
+    font-size: 1rem;
+  }
+  
+  .toppppfarm {
+    box-sizing: border-box;
+    width: 220px;
+    height: 45px;
+    left: 78px;
+    top: 119px;
+    background: #05b00c;
+    border: 1px solid #0fb30d;
+    border-radius: 20px 0px;
+  }
+  #todayfarm {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 0rem;
+  }
+  .tempp {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-left: 2rem;
+  }
+  #tempo {
+    width: 225px;
+    height: 73px;
+    left: 80px;
+    top: 165px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 510;
+    font-size: 70px;
+    line-height: 100px;
+  
+    align-items: left;
+  
+    color: #000000;
+  }
+  .weathericon {
+    height: 100px;
+    width: 100px;
+    margin-left: 1rem;
+  }
+  
+  .otherdata {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #eventfarm {
+    box-sizing: border-box;
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 23%;
+    background: #0fb30d;
+    border: 1px solid #0fb30d;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 7px;
+  }
+  .calenderfarm {
+    position: absolute;
+    width: 28rem;
+    height: 280px;
+    left: 66rem;
+    top: 115px;
+  
+    background: #ffffff;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #0fb30d;
+    display: flex;
+  }
+  .calfarm {
+    width: 720px;
+    margin-left: 28px;
+    margin-top: 0px;
+  }
+  
+  .sellinfo {
+    position: absolute;
+    width: 28rem;
+    left: 66rem;
+    top: 430px;
+    height: 330px;
+  
+    background: #ffffff;
+    box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid #0fb30d;
+  }
+  #selli {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 230px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+  
+    background: #0fb30d;
+    border: 1px solid #0fb30d;
+    border-radius: 20px 0px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 8px;
+  }
+  .listcrop {
+    margin-top: 4rem;
+    /* border:1px solid red; */
+    height:16rem;
+    overflow-y:scroll;
+  }
+  #textbox{
+    width: 25rem;
+
+  }
+  textarea{
+    border:#05b00c  1px solid;
+    border-radius: 10px;
+    height: 5rem;
+  }
+  
+  .crops{
+    text-align: left;
+    /* border:#05b00c 1px solid; */
+    padding-left:2rem;
+    padding-bottom:1.5rem;
+    font-size: 1.2rem;
+  }
+  .crops:hover{
+    background-color: #05b00c;
+    color: white;
+  }
+  .listinfo #sellul {
+    list-style: circle ;
+    margin-top: 3rem;
+    font-size: 20px;
+    word-spacing: 0.5rem;
+    padding : 0.5rem;
+  }
+  .listinfo #try {
+    display: flex;
+    justify-content: space-between;
+  }
+  #desc{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 1rem;
+  }
+  .dateif {
+    font-size: 24px;
+    margin-top: 10px;
+  }

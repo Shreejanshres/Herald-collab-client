@@ -2,14 +2,16 @@ import React from 'react';
 import Navbar from '../Component/Navbar';
 import Registerimg from "../Images/Register.png";
 import "../Css/ContactUs.css";
-// import '@fortawesome/fontawesome-free/css/all.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const Contact = () => {
     return (
         <>
             <Navbar />
+            <div className='backlogadmin' style={{backgroundImage: `url(${Registerimg})`}}>   
+                </div>
             <div className='con'>
-            <form id="reg">
+            <form id="regcon">
                 <div className='Contact'>
                     <h1 id='a'>Contact Us</h1>
                     <div id="card1">
@@ -29,9 +31,6 @@ const Contact = () => {
                     </div>
                 </div>
             </form>
-            </div>
-            <div className='backg'>
-                <img id="imgg" alt="registerimg" src={Registerimg} />
             </div>
         </>
     )

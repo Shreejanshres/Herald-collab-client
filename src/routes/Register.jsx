@@ -8,12 +8,14 @@ export const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [name, setname] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState("farmer");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(user);
     if (password !== confirmPassword) {
       alert("Passwords do not match");
     } else {
@@ -34,13 +36,15 @@ export const Register = () => {
         });
         if (response.ok) {
           const data = await response.json();
+          console.log(data);
+          localStorage.setItem("user", JSON.stringify(data));
           if (data.type === "farmer") {
             window.location.href = "/kyc";
           } else if (data.type === "seller") {
             window.location.href = "/seller";
+          } else {
+            alert("Invalid Credentials");
           }
-        } else {
-          alert("Invalid Credentials");
         }
       } catch (error) {
         console.log(error);
@@ -51,15 +55,15 @@ export const Register = () => {
   return (
     <>
       <div
-        className="register_r"
+        className="register_rimg"
         style={{ backgroundImage: `url(${Registerimg})` }}
       >
-        <div id="Nav_reg">
+        <div id="Nav_regis">
           <Link to="/">
             <img src={logo} alt="logo" className="logore" />
           </Link>
           <div className="top_re">
-            <a>Already have an account? </a>
+            <a id="alreadyacc">Already have an account? </a>
             <Link to="/login">
               <button id="button_r1">LOGIN</button>
             </Link>
@@ -77,6 +81,7 @@ export const Register = () => {
             placeholder="youremail@gmail.com"
             id="email"
             name="email"
+            required
             onChange={(e) => setEmail(e.target.value)}
           />
           <label id="la1" htmlFor="password">
@@ -87,6 +92,7 @@ export const Register = () => {
             type="password"
             placeholder="**********"
             id="password"
+            required
             name="password"
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -99,7 +105,20 @@ export const Register = () => {
             placeholder="**********"
             id="confirmPassword"
             name="confirmPassword"
+            required
             onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+          <label id="la" htmlFor="email">
+            Name:
+          </label>
+          <input
+            value={name}
+            type="text"
+            placeholder="Your name"
+            id="name"
+            name="name"
+            required
+            onChange={(e) => setname(e.target.value)}
           />
           <label id="la3" htmlFor="address">
             Address:
@@ -108,6 +127,7 @@ export const Register = () => {
             value={address}
             type="address"
             name="address"
+            required
             placeholder="address"
             onChange={(e) => setAddress(e.target.value)}
           />
@@ -119,6 +139,7 @@ export const Register = () => {
               value={phone}
               type="tel"
               name="phone"
+              required
               placeholder="phone"
               onChange={(e) => setPhone(e.target.value)}
             />
@@ -135,7 +156,6 @@ export const Register = () => {
               <option value="seller">Seller</option>
             </select>
             <button id="button_r2" type="submit">
-              {" "}
               Register
             </button>
           </div>

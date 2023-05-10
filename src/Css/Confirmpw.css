@@ -1,11 +1,11 @@
 
-.forgotpw{
+.otpverify{
     width: 100%;
     height: 100%;
     position: fixed;
 
 }
-.head{
+.headotp{
     display : flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@
     z-index: 9999;
     margin-left: -13.5rem;
 }
-.logopw{
+.logootp{
     margin-top: 15px;
     height:65px;
     width:65px;
@@ -43,13 +43,13 @@
     padding: 10px;
 
 }
-#forgot{
+#forgotconfirm{
     position: absolute;
     width: 200px;
     height: 64px;
-    left: 38%;
+    left: 34.5%;
     right: 50%;
-    top: 130px;
+    top: 10rem;
     margin-bottom: 15px;
     padding-bottom: 15px;
 
@@ -64,15 +64,15 @@
     align-items: center;
     text-align: center;
 }
-.midd{
+.middcon{
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 230px;
+    margin-top: 16rem;
     padding:20px;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
-#fpw{
+#fnewpass{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -81,26 +81,51 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0rem;
     margin-top: 20px;
+    margin-left: 0rem;
 }
-#ema{
-    padding: 8px;
-    box-shadow: 3px 3px 5px rgb(175, 233, 178);
-    font-size: 14px;
-    font-weight: 600;
-    width: 450px;
-    height: 50px;
-    border-radius: 13px;
-    background:  #FFFFFF;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #05B00C;
+#newpassword{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+    margin-left: 0rem;
 }
-#button5{
+#connewpass{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+#connewpass2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+#buttonconf{
     margin-top: 20px;
     width: 170px;
     height: 45px;
-    margin-left: 60px;
+    margin-left: 4rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

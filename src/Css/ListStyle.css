@@ -9,21 +9,35 @@
     z-index: 9999;
     
 }
-.logo{
+.logooa{
     margin-top: 25px;
     height:65px;
     width:65px;
     align-items: left;
     margin-left: 35px;
 }
-.nav-menu{
-    display:grid;
-    grid-template-columns:repeat(6,auto);
-    grid-gap:35px;
+.nav_menu{
+    display:inline-flex;
     list-style: none;
     align-items: center;
-    margin-right: -80px;
+    margin-right:-1rem;
     margin-top: 30px;
+
+}
+.nav-menu{
+    display: flex;
+    padding: 0px;
+    margin-left: 5rem;
+    gap: 40px;
+
+}
+.nav-menu li{
+    list-style: none;
+    padding: 11px;
+    margin-left: -20px;
+    margin-right: -10px;
+    margin-top: 0.5rem;
+    
 
 }
 .nav-links{
@@ -38,6 +52,7 @@
 .nav-links:hover{
     color:#05B00C;
     transition: all 0.2s ease-in-out;
+    
     
 }
 .nav-links-mobile{
@@ -55,11 +70,11 @@ button{
     border-radius: 58px;
     color: white;
     margin-left: -30px;
-    margin-right: 50px;
     transition: 0.2s ease-in-out;
-    margin-top: -20px;
+    margin-top: -10px;
     margin-bottom: 10%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 6rem;
     
 }
 button:hover{
